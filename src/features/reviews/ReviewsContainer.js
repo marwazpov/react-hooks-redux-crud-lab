@@ -2,11 +2,11 @@ import React from "react";
 import ReviewInput from "./ReviewInput";
 import Reviews from "./Reviews";
 
-function ReviewsContainer() {
+function ReviewsContainer({restaurantId }) {
   return (
     <div>
-      <ReviewInput />
-      <Reviews />
+      <ReviewInput restaurantId = {restaurantId} />
+      <Reviews restaurantId = {restaurantId} />
     </div>
   );
 }
